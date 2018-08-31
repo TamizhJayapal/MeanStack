@@ -1,0 +1,22 @@
+
+<div style="text-align:center">
+  <h1>
+    Meanstack crud
+  </h1>  
+</div>
+
+<button class="button button5" (click) = "view()" >view result</button>
+<table>
+  <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Email</th>
+      <th>Date</th>    
+  </tr>
+  <tr *ngFor = "let std of students">
+    <td>{{std.name}}</td>
+    <td>{{std.address}}</td>
+    <td>{{std.email}}</td>
+    <td>{{std.date}}</td>
+  </tr>
+</table>
