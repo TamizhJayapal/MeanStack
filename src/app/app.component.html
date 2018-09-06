@@ -1,22 +1,13 @@
 
+<ul>
+  <li routerLink="/home" routerLinkActive="active"><a class="active">Home</a></li>
+  <li routerLink="/add"><a>Add</a></li>
+  <li routerLink="/list"><a>List</a></li>
+</ul>
 <div style="text-align:center">
   <h1>
     MeanStack crud
   </h1>  
 </div>
+<router-outlet></router-outlet>
 
-<button class="button button5" (click) = "view()" >view result</button>
-<table>
-  <tr>
-      <th>Name</th>
-      <th>Address</th>
-      <th>Email</th>
-      <th>Date</th>    
-  </tr>
-  <tr *ngFor = "let std of students">
-    <td>{{std.name}}</td>
-    <td>{{std.address}}</td>
-    <td>{{std.email}}</td>
-    <td>{{std.date}}</td>
-  </tr>
-</table>
